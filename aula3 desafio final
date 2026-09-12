@@ -1,0 +1,49 @@
+TERMINAL 1:
+root@ubuntu:~$ mkdir desafio_final
+root@ubuntu:~$ cd desafio_final
+root@ubuntu:~/desafio_final$ echo "<h1>arquitetura hibrida universidade</h1>" > index.html
+root@ubuntu:~/desafio_final$ echo "<h2>a universidade utilizara uma combinacao de nuvem publica e nuvem privada, formando uma arquitetura hibrida</h2>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<h3>nuvem publica</h3>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<p>portal institucional</p>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<p>ambiente do aluno</p>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<p>biblioteca digital</p>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<h3>nuvem privada</h3>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<p>sistema financeiro</p>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<p>dados pessoais dos estudantes</p>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<p>sistema interno dos professores</p>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<h3>arquitetura hibrida</h3>" >> index.html
+root@ubuntu:~/desafio_final$ echo "<p>a combinacao da nuvem publica com a nuvem privada forma uma arquitetura hibrida, permitindo que a universidade utilize cada ambiente de acordo com as necessidades de seus sistemas</p>" >> index.html
+root@ubuntu:~/desafio_final$ cat index.html
+<h1>arquitetura hibrida universidade</h1>
+<h2>a universidade utilizara uma combinacao de nuvem publica e nuvem privada, formando uma arquitetura hibrida</h2>
+<h3>nuvem publica</h3>
+<p>portal institucional</p>
+<p>ambiente do aluno</p>
+<p>biblioteca digital</p>
+<h3>nuvem privada</h3>
+<p>sistema financeiro</p>
+<p>dados pessoais dos estudantes</p>
+<p>sistema interno dos professores</p>
+<h3>arquitetura hibrida</h3>
+<p>a combinacao da nuvem publica com a nuvem privada forma uma arquitetura hibrida, permitindo que a universidade utilize cada ambiente de acordo com as necessidades de seus sistemas</p>
+root@ubuntu:~/desafio_final$ python3 -m http.server 8080
+Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+127.0.0.1 - - [12/Sep/2026 01:59:00] "GET / HTTP/1.1" 200 -
+
+TERMINAL 2:
+root@ubuntu:~$ curl localhost:8080
+<h1>arquitetura hibrida universidade</h1>
+<h2>a universidade utilizara uma combinacao de nuvem publica e nuvem privada, formando uma arquitetura hibrida</h2>
+<h3>nuvem publica</h3>
+<p>portal institucional</p>
+<p>ambiente do aluno</p>
+<p>biblioteca digital</p>
+<h3>nuvem privada</h3>
+<p>sistema financeiro</p>
+<p>dados pessoais dos estudantes</p>
+<p>sistema interno dos professores</p>
+<h3>arquitetura hibrida</h3>
+<p>a combinacao da nuvem publica com a nuvem privada forma uma arquitetura hibrida, permitindo que a universidade utilize cada ambiente de acordo com as necessidades de seus sistemas</p>
+
+EXPLICAÇÃO:
+A combinação da nuvem pública com a nuvem privada forma uma arquitetura híbrida, permitindo que a universidade utilize cada ambiente de acordo com as necessidades de seus sistemas.
